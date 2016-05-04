@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "inlineSources": true
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "dist",
+    "node_modules",
+    "typings/browser.d.ts",
+    "typings/browser",
+    "typings/main.d.ts"
+  ]
+}
