@@ -1,0 +1,67 @@
+{
+  "name": "angular2-change-detection",
+  "version": "0.0.0",
+  "author": "Jay Kan",
+  "description": "Angular2 change detection demo",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": ">= 4.2.1 < 5",
+    "npm": "2.14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayKan/angular2-change-detection.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JayKan/angular2-change-detection/issues"
+  },
+  "homepage": "https://github.com/JayKan/angular2-change-detection#readme",
+  "dependencies": {
+    "jsonwebtoken": "5.7.0",
+    "koa": "1.2.0",
+    "koa-bodyparser": "2.0.1",
+    "koa-jwt": "1.1.2",
+    "koa-router": "5.4.0",
+    "koa-static": "2.0.0",
+    "node-uuid": "1.4.7"
+  },
+  "devDependencies": {
+    "angular2": "2.0.0-beta.15",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "connect-livereload": "^0.5.4",
+    "del": "2.2.0",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.35.0",
+    "express": "^4.13.4",
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-inject": "^4.0.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sequence": "^0.4.5",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-template": "^4.0.0",
+    "karma": "^0.13.22",
+    "open": "^0.0.5",
+    "reflect-metadata": "0.1.2",
+    "remap-istanbul": "^0.6.3",
+    "run-sequence": "^1.1.5",
+    "through2": "^2.0.1",
+    "rxjs": "5.0.0-beta.2",
+    "slash": "^1.0.0",
+    "systemjs": "^0.19.26",
+    "tiny-lr": "^0.2.1",
+    "ts-node": "^0.7.2",
+    "typescript": "^1.8.10",
+    "typescript-register": "^1.1.0",
+    "typings": "^0.8.1",
+    "yargs": "^4.6.0",
+    "zone.js": "^0.6.11"
+  }
+}
