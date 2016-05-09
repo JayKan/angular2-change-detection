@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular2 Change Detection Demo</title>
+  <meta name="description" content="Angular2 change detection demos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <style type="text/css">
+    body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      padding: 15px 50px;
+      font-weight: 300;
+      color: #555;
+    }
+  </style>
+  <!-- lib:css -->
+  <!-- endinject -->
+
+</head>
+
+<body>
+
+<!--[if lte IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<demo-app>Loading...</demo-app>
+
+<!-- lib:js -->
+<!-- endinject -->
+
+<script>
+  window.IS_PROD = '<%= IS_PROD %>';
+  System.import('app.bundle.js').then(function () {
+    return System.import('bootstrap');
+  }).catch(console.error.bind(console));
+</script>
+
+</body>
+
+</html>
