@@ -221,5 +221,12 @@ gulp.task('server.start', (done) => {
     }, 500);
   })
 });
-
 gulp.task('serve', seq('build.w', 'server.start'));
+
+gulp.task('server-copy-dist', () => gulp.src(['server/**/*.{js,json}', '!server/**/*.spec.*'])
+  .pipe(gulp.dest('dist/server'))
+);
+gulp.task('general-copy-dist', () => gulp.src(['package.json'])
+  .pipe(gulp.dest('dist'))
+);
+gulp.task('publish', seq('server-copy-dist', 'general-copy-dist'));
