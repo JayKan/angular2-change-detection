@@ -4,7 +4,8 @@
   "author": "Jay Kan",
   "description": "Angular2 change detection demo",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "publish": "gulp publish"
   },
   "engines": {
     "node": ">= 4.2.1 < 5",
