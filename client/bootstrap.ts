@@ -1,7 +1,8 @@
-import { enableProdMode, provide } from 'angular2/core';
-import { bootstrap } from 'angular2/platform/browser';
-import { HTTP_PROVIDERS } from 'angular2/http';
-import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy, APP_BASE_HREF } from 'angular2/router';
+import { enableProdMode, provide } from '@angular/core';
+import { bootstrap } from '@angular/platform-browser-dynamic';
+import { HTTP_PROVIDERS } from '@angular/http';
+import { LocationStrategy, HashLocationStrategy, APP_BASE_HREF } from '@angular/common';
+import { ROUTER_PROVIDERS } from '@angular/router-deprecated';
 import { DemoApp } from './demo-app/demo-app';
 import { ToggleStateService } from './services/toggle-state.service';
 

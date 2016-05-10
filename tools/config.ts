@@ -24,16 +24,14 @@ export const PATHS = {
   src: {
     vendor: {
       js: [
+        `${NODE_MODULES}/systemjs/dist/system-polyfills.src.js`,
+        `${NODE_MODULES}/systemjs/dist/system.src.js`,
+        `${NODE_MODULES}/reflect-metadata/Reflect.js`,
         `${NODE_MODULES}/es6-shim/es6-shim.js`,
-        `${NODE_MODULES}/systemjs/dist/system-register-only.src.js`,
         `${NODE_MODULES}/rxjs/bundles/Rx.js`,
-        `${NODE_MODULES}/angular2/bundles/angular2-polyfills.js`,
-        `${NODE_MODULES}/angular2/bundles/angular2.dev.js`,
-        `${NODE_MODULES}/angular2/bundles/router.dev.js`,
-        `${NODE_MODULES}/angular2/bundles/http.dev.js`,
+        `${NODE_MODULES}/zone.js/dist/zone.js`,
       ],
       copyOnly: [
-        `${NODE_MODULES}/systemjs/dist/system-polyfills.src.js`,
         `${NODE_MODULES}/bootstrap/dist/css/bootstrap.css.map`
       ],
       font: [
@@ -49,6 +47,7 @@ export const PATHS = {
         `${CLIENT_SRC}/**/*.html`,
         `!${INDEX_HTML}`
       ],
+      config: `${CLIENT_SRC}/system.config.js`,
       css: `${CLIENT_SRC}/**/*.css`,
       tsApp: TS_LIB_DEF.concat([
         `${CLIENT_SRC}/**/*.ts`,

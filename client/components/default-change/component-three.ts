@@ -1,4 +1,4 @@
-import { Component, AfterViewChecked, ViewEncapsulation, NgZone, ElementRef } from 'angular2/core';
+import { Component, AfterViewChecked, ViewEncapsulation, NgZone, ElementRef } from '@angular/core';
 import { ComponentSix } from './component-six';
 import { ComponentSeven } from './component-seven';
 import { toggleClass } from '../../services/toggle-class.service';

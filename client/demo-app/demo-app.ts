@@ -1,5 +1,5 @@
-import { Component, ViewEncapsulation, ViewChild, OnInit, AfterViewChecked, AfterViewInit } from 'angular2/core';
-import { ROUTER_DIRECTIVES, RouteConfig, Route } from 'angular2/router';
+import { Component, ViewEncapsulation, ViewChild, OnInit, AfterViewChecked, AfterViewInit } from '@angular/core';
+import { ROUTER_DIRECTIVES, RouteConfig, Route } from '@angular/router-deprecated';
 import { DefaultChangeComponent } from '../components/default-change/default-change';
 import { Subject } from 'rxjs/Rx';
 
@@ -23,9 +23,7 @@ export class DemoApp {
 
   constructor() {}
   
-  ngOnInit(): void {
-    // console.log('## DemoApp ngOnInit()');
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     console.log('## DemoApp @VieChild() being set here: ', this.defaultViewChild);

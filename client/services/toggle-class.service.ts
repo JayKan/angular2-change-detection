@@ -1,4 +1,4 @@
-import { ElementRef, NgZone } from 'angular2/core';
+import { ElementRef, NgZone } from '@angular/core';
 
 export function toggleClass(el: ElementRef, zone: NgZone, className:string = 'checked') {
   let a = el.nativeElement.querySelector('a');

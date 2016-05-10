@@ -117,6 +117,12 @@ gulp.task('copyOnlyLib', () => gulp.src(PATHS.src.vendor.copyOnly)
   .pipe(gulp.dest((file: any) => mapDestPathForLib(file.path)))
 );
 
+// --------------
+// Copy config 
+gulp.task('copyOnlyConfig', () => gulp.src(PATHS.src.custom.config)
+  .pipe(gulp.dest('dist/client'))
+);
+
 // ---------------
 // Copy vendor css
 gulp.task('cssLib', () => gulp.src(PATHS.src.vendor.css)
@@ -187,10 +193,10 @@ gulp.task('reload.w', () => gulp.watch(`${PATHS.dest.dist.base}/**/*`, (evt: any
 // ------------------
 // Build and watch
 gulp.task('build', ['clean.dist'], seq(
-  ['copyOnlyLib', 'cssLib', 'font', 'jsLib', 'css', 'tpl', 'ts', 'index'])
+  ['copyOnlyLib', 'copyOnlyConfig', 'cssLib', 'font', 'jsLib', 'css', 'tpl', 'ts', 'index'])
 );
 gulp.task('build.w', ['clean.dist'], seq(
-  ['copyOnlyLib', 'cssLib', 'font', 'jsLib', 'css.w', 'tpl.w', 'ts.w', 'index.w'], 'reload.w')
+  ['copyOnlyLib', 'copyOnlyConfig', 'cssLib', 'font', 'jsLib', 'css.w', 'tpl.w', 'ts.w', 'index.w'], 'reload.w')
 );
 
 // ------------------

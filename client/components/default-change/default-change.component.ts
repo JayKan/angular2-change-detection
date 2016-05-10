@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, ViewChild, OnInit} from 'angular2/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit} from '@angular/core';
 import { ComponentOne } from './component-one';
 import { Subject } from 'rxjs/Rx';
 import { ToggleStateService } from '../../services/toggle-state.service';

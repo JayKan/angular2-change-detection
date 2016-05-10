@@ -31,7 +31,9 @@
 <!-- lib:js -->
 <!-- endinject -->
 
-<script>
+<script type="text/javascript" src="./system.config.js"></script>
+
+<script type="text/javascript">
   window.IS_PROD = '<%= IS_PROD %>';
   System.import('app.bundle.js').then(function () {
     return System.import('bootstrap');
