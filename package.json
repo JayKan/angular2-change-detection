@@ -4,11 +4,11 @@
   "author": "Jay Kan",
   "description": "Angular2 change detection demo",
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "copy": "gulp publish"
   },
   "engines": {
-    "node": ">= 4.2.1 < 5",
-    "npm": "2.14.x"
+    "node": ">= 4.2.1 < 5"
   },
   "repository": {
     "type": "git",
